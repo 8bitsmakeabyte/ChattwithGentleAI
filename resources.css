@@ -213,7 +213,6 @@ hr {
 
 .videos{
     display:flex;
-    justify-content:center;
     
 }
 iframe{
@@ -240,7 +239,7 @@ iframe{
 
     .videos {
         flex-direction: column;
-        justify-content:left;
+
     }
     hr {
         width: 50%; 
