@@ -1,0 +1,246 @@
+body {
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(21, 20, 20);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: myfont;
+    color: #333;
+    text-align: center;
+    position: relative; 
+}
+.logo {
+    font-family: myfont;
+    font-size: 1.4em;
+    margin-left:10px;
+    color: white;
+    text-decoration: none;
+    margin:10px;
+}
+
+nav {
+    background-color: transparent; 
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+    z-index:1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white; 
+    position: relative;
+}
+
+nav a:hover {
+    background-color: transparent;
+    transition: border-bottom 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; 
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8), 
+                0px 0px 12px rgba(255, 255, 255, 0.6), 
+                0px 0px 16px rgba(255, 255, 255, 0.4); 
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; 
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: 0; 
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    z-index: 0; 
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    z-index: 1; 
+}
+
+.title {
+    font-family: myfont;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: white;
+    font-family: myfont;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: white;
+    font-family: myfont;
+    font-size: 1.5em;
+    line-height: 1.3;
+    margin-bottom: 20px; 
+}
+
+.bg-shape1, .bg-shape2, .bg-shape3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 10s infinite;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.bg-blur {
+    filter: blur(90px);
+}
+
+.bg-primary {
+    background-color: rgb(206, 113, 246);
+}
+
+.bg-teal {
+    background-color: rgb(255, 8, 144);
+}
+
+.bg-red {
+    background-color: rgb(49, 145, 255);
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(font.ttf);
+}
+
+button {
+    padding: 1em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: myfont;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px auto 0; 
+    transition: box-shadow 0.3s ease; 
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #008cff, 0 0 20px #e100ff; 
+    z-index: 0;
+}
+
+.menu-button {
+    display: none;
+    position: absolute;
+    right: 25px; /*reduced px*/
+    top: 10px; /*reduced px*/
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .logo {
+        font-size: 1.5em;
+        margin:10px;
+    }
+    .title {
+        font-size: 3em;
+    }
+    .subtitle, .description {
+        font-size: 1.2em; /*reduced size*/
+    }
+    button {
+        font-size: 0.9em;
+        padding: 0.8em 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
