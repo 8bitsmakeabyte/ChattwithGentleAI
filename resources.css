@@ -1,35 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@400;500;600&display=swap');
-body{
-    background-color:#171616;
+body {
+    background-color: #171616;
 }
 
-
-.container{
-    width:1300px;
-    height:1300px;
-    margin:50px auto;
+.container {
+    width: 1300px;
+    height: 1300px;
+    margin: 50px auto;
 }
 
-.glass{
-    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
-    border-radius:20px;
-    border:1px solid rgba(255,255,255,0.18);
-    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 .absolute {
     position: absolute;
-    margin-top:120px;
-    top: 450; 
+    margin-top: 120px;
+    top: 450;
     inset: 0;
     justify-content: center;
     display: inline-flex;
     flex-direction: row;
-    z-index: 0; 
+    z-index: 0;
 }
 
 .bg-shape1, .bg-shape2, .bg-shape3 {
@@ -50,22 +49,21 @@ body{
     animation: moveAround3 26s infinite ease-in-out alternate;
 }
 
-
 @keyframes moveAround1 {
     0% {
         transform: translate(0px, 0px);
     }
     25% {
-        transform: translate(20px, 50px); 
+        transform: translate(20px, 50px);
     }
     50% {
-        transform: translate(-40px, 20px); 
+        transform: translate(-40px, 20px);
     }
     75% {
         transform: translate(-30px, -40px);
     }
     100% {
-        transform: translate(30px, -30px); 
+        transform: translate(30px, -30px);
     }
 }
 
@@ -74,13 +72,13 @@ body{
         transform: translate(0px, 0px);
     }
     25% {
-        transform: translate(-30px, 40px); 
+        transform: translate(-30px, 40px);
     }
     50% {
-        transform: translate(30px, -10px); 
+        transform: translate(30px, -10px);
     }
     75% {
-        transform: translate(10px, -50px); 
+        transform: translate(10px, -50px);
     }
     100% {
         transform: translate(-20px, 30px);
@@ -92,16 +90,16 @@ body{
         transform: translate(0px, 0px);
     }
     25% {
-        transform: translate(50px, -20px); 
+        transform: translate(50px, -20px);
     }
     50% {
-        transform: translate(-10px, 40px); 
+        transform: translate(-10px, 40px);
     }
     75% {
-        transform: translate(-40px, 10px); 
+        transform: translate(-40px, 10px);
     }
     100% {
-        transform: translate(20px, -30px); 
+        transform: translate(20px, -30px);
     }
 }
 
@@ -124,81 +122,78 @@ body{
 .bg-red {
     background-color: rgb(240, 172, 95);
 }
-.heading-Resources{
+.heading-Resources {
     font-family: "Cinzel";
-    text-align:center;
-    font-weight:500;
-    color:white;
-    margin:30px;
-    margin-bottom:2px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    margin: 30px;
+    margin-bottom: 2px;
     font-size: 40px;
-    transition:color 0.3s ease;
+    transition: color 0.3s ease;
 }
-h3{
+h3 {
     font-family: "Cinzel";
-    text-align:left;
-    font-weight:600;
-    color:white;
-    margin:30px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+    margin: 30px;
     font-size: 20px;
-    transition:color 0.3s ease;
+    transition: color 0.3s ease;
     margin-bottom: 15px;
 }
-h4{
-    text-align:left;
-    margin:30px;
+h4 {
+    text-align: left;
+    margin: 30px;
     font-family: "Poppins";
     font-weight: 400;
     color: white;
     margin-top: 0;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 .section-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 30px; 
+    gap: 30px;
 }
-
 
 .section {
-    width: 45%; 
-    text-align:center;
+    width: 45%;
+    text-align: center;
 }
-.section2{
-    margin-right:300px;
-    margin-top:70px;
+.section2 {
+    margin-right: 300px;
+    margin-top: 70px;
 }
 
 ul {
-    text-align:left;
+    text-align: left;
     margin-top: 0;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
-.heading-Resources:hover{
-    background: linear-gradient(to right, rgb(248, 214, 219),rgb(252, 54, 163));
-    background-clip:content-box;
+.heading-Resources:hover {
+    background: linear-gradient(to right, rgb(248, 214, 219), rgb(252, 54, 163));
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-ul li{
-    font-family:"Poppins";
-    font-weight:400;
-    text-align:justify;
-    margin:20px;
-    margin-bottom:8px;
-    font-size:16px;
-    color:white;
-    padding-left:2px;
-    padding-bottom:2px;
-    
-
+ul li {
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: justify;
+    margin: 20px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: white;
+    padding-left: 2px;
+    padding-bottom: 2px;
 }
+
 a {
-    color: white; 
-    
+    color: white;
 }
 
 a:hover {
@@ -206,30 +201,36 @@ a:hover {
 }
 
 hr {
-    width: 50%; 
-    margin: auto; 
-    border: 1px solid #ffffff; 
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ffffff;
 }
 
-.videos{
-    display:flex;
-    
+
+.videos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px; 
 }
-iframe{
-    height:300px;
-    width:350px;
-    margin:0 20px;
-    
+
+iframe {
+    height: 280px; 
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px; 
 }
+
 /* Responsive adjustments for mobile screens */
 @media (max-width: 1000px) {
     .container {
         width: 95%;
-        height:auto;
-        margin:auto 10px auto 10px ;
-        padding: auto 15px auto 15px;
+        height: auto;
+        margin: auto 10px;
+        padding: 15px;
     }
-    
+
     .absolute {
         margin-top: 20px;
         display: block;
@@ -239,73 +240,64 @@ iframe{
 
     .videos {
         flex-direction: column;
-
     }
+
     hr {
-        width: 50%; 
-        margin:20px auto 20px auto;
-        border: 1px solid #ffffff; 
+        width: 50%;
+        margin: 20px auto;
+        border: 1px solid #ffffff;
     }
 
     iframe {
-        height:300px;
-        width:350px;
-        gap:50px;
-        margin:20px;
-        
+        height: 300px;
+        width: 350px;
+        margin: 20px;
     }
+
     .section-container {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
-        display:flex;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     .section, .section2 {
-        width: 100%; 
+        width: 100%;
         margin-top: 20px;
     }
 
     h4 {
-        white-space: nowrap; 
-        font-size:40px; 
-        margin: 0 30px 10px; 
+        white-space: nowrap;
+        font-size: 40px;
+        margin: 0 30px 10px;
     }
-    ul {
-    text-align:left;
-    margin-top: 0;
-    padding-left: 20px;
+
+    ul li {
+        font-family: "Poppins";
+        font-weight: 400;
+        text-align: justify;
+        margin: 20px;
+        font-size: 30px;
+        color: white;
     }
-    ul li{
-    font-family:"Poppins";
-    font-weight:400;
-    text-align:justify;
-    margin:20px;
-    margin-bottom:8px;
-    font-size:30px;
-    color:white;
-    padding-left:3px;
-    padding-bottom:2px;
-    }
-    h3{
+
+    h3 {
         font-family: "Cinzel";
-        text-align:left;
-        font-weight:600;
-        color:white;
-        margin:30px;
+        text-align: left;
+        font-weight: 600;
+        color: white;
         font-size: 50px;
-        transition:color 0.3s ease;
         margin-bottom: 15px;
     }
 }
+
 @media (max-width: 800px) {
     .container {
         width: 95%;
-        height:auto;
-        margin:auto 10px auto 10px ;
-        padding: auto 15px auto 15px;
+        height: auto;
+        margin: auto 10px;
+        padding: 15px;
     }
-    
+
     .absolute {
         margin-top: 20px;
         display: block;
@@ -316,62 +308,51 @@ iframe{
     .videos {
         flex-direction: column;
     }
-    
+
     hr {
-        width: 50%; 
-        margin:20px auto 20px auto;
-        border: 1px solid #ffffff; 
+        width: 50%;
+        margin: 20px auto;
+        border: 1px solid #ffffff;
     }
 
     iframe {
-        height:300px;
-        width:350px;
-        gap:50px;
-        margin:30px;
-        
-        
+        height: 300px;
+        width: 350px;
+        margin: 30px;
     }
+
     .section-container {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
-        display:flex;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     .section, .section2 {
-        width: 100%; 
+        width: 100%;
         margin-top: 20px;
     }
 
     h4 {
-        white-space: nowrap; 
-        font-size: 30px; 
-        margin: 0 30px 10px; 
-    }
-    ul {
-    text-align:left;
-    margin-top: 0;
-    padding-left: 20px;
-    }
-    ul li{
-    font-family:"Poppins";
-    font-weight:400;
-    text-align:justify;
-    margin:20px;
-    margin-bottom:8px;
-    font-size:20px;
-    color:white;
-    padding-left:3px;
-    padding-bottom:2px;
-    }
-    h3{
-        font-family: "Cinzel";
-        text-align:left;
-        font-weight:600;
-        color:white;
-        margin:30px;
+        white-space: nowrap;
         font-size: 30px;
-        transition:color 0.3s ease;
+        margin: 0 30px 10px;
+    }
+
+    ul li {
+        font-family: "Poppins";
+        font-weight: 400;
+        text-align: justify;
+        margin: 20px;
+        font-size: 20px;
+        color: white;
+    }
+
+    h3 {
+        font-family: "Cinzel";
+        text-align: left;
+        font-weight: 600;
+        color: white;
+        font-size: 30px;
         margin-bottom: 15px;
     }
 }
