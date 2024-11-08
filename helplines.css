@@ -218,7 +218,7 @@ p{
 @media (max-width: 800px) {
     .container {
         width: 95%;
-        height:900px;
+        height:1200px;
         margin:10px 10px auto 10px ;
         padding: auto 15px auto 15px;
     }
